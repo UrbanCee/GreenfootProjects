@@ -9,6 +9,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Player extends AnimatedActor
 {
     static final double PLAYERSPEED=200.0;
+    
+    public Player()
+    {
+        setImage(AnimatedActor.upscaleSprite(getImage()));
+    }
+    
+    
     public void act() 
     {
         updateTime();

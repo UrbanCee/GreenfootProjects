@@ -30,5 +30,15 @@ public class AnimatedActor extends Actor
         if (dT>0.2)
             dT=0.0;
        lastUpdate=newTime;
-    }    
+    } 
+    
+    static public GreenfootImage upscaleSprite( GreenfootImage sprite)
+    {
+        int w=sprite.getWidth();
+        int h=sprite.getHeight();
+        GreenfootImage newImage = new GreenfootImage(sprite);
+        newImage.scale(w*2,h*2);
+        return newImage;
+    }
+    
 }
