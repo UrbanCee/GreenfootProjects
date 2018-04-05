@@ -15,11 +15,22 @@ public class Palette
         cols.add(c2);
         cols.add(c3);
     }
+    
     public Color get(int i)
     {
         return cols.get(i);
     }
     
-    public 
+    public void set(int i, Color col)
+    {
+        if (i<0 || i>2)
+            return;
+        cols.set(i,col);
+    }
+    
+    public void makeBodyPalette()
+    {
+        cols.set(1,cols.get(2));
+    }
     
 }

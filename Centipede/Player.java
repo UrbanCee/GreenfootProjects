@@ -24,17 +24,27 @@ public class Player extends AnimatedActor
             x-=PLAYERSPEED*dT;
             if (x<0)
                 x=0;
-            else if (x>getWorld().getWidth()-1)
-                x=getWorld().getWidth()-1;
         }
 
         if (Greenfoot.isKeyDown("right"))
         {
             x+=PLAYERSPEED*dT;
-            if (x<0)
-                x=0;
-            else if (x>getWorld().getWidth()-1)
+            if (x>getWorld().getWidth()-1)
                 x=getWorld().getWidth()-1;
+        }
+
+        if (Greenfoot.isKeyDown("up"))
+        {
+            y-=PLAYERSPEED*dT;
+            if (y<0)
+                y=0;
+        }
+
+        if (Greenfoot.isKeyDown("down"))
+        {
+            y+=PLAYERSPEED*dT;
+            if (y>getWorld().getHeight()-1)
+                y=getWorld().getHeight()-1;
         }
 
         if (Greenfoot.isKeyDown("space"))

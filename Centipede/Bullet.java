@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Bullet extends AnimatedActor
 {
-    static final double BULLETSPEED=800.0;
+    static final double BULLETSPEED=1200.0;
     static GreenfootImage bulletImage = null;
 
     public Bullet()
