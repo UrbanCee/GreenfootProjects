@@ -32,7 +32,7 @@ public class MyWorld extends World
     
     public void act()
     {
-        dAngleRatio-=0.000001;
+        dAngleRatio-=0.000003;
         List<Seed> seeds = getObjects(Seed.class);
         double mx=getWidth()/2.0;
         double my=getHeight()/2.0;
